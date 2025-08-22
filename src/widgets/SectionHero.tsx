@@ -1,5 +1,6 @@
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Download } from "lucide-react";
+import {  CheckCircle, Download } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -13,9 +14,13 @@ export const SectionHero = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
         <div className="space-y-8">
-          <div className="inline-flex items-center px-4 py-2 rounded-full glass border text-sm font-medium">
-            Lotto Latina - Resultados de Loterias
-          </div>
+           <Badge
+                variant="secondary"
+                className="bg-blue-100 text-blue-700 hover:bg-blue-200 transition-colors"
+              >
+                <CheckCircle className="h-4 w-4 mr-2" />
+                Lotto Latina - Resultados de Loterias Latinas
+              </Badge>
           <h1 className="text-6xl lg:text-8xl font-bold leading-none">
             Lotto
             <br />
