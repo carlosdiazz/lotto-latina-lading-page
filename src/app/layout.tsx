@@ -72,7 +72,9 @@ export default function RootLayout({
       lang="es"
       className={`${montserrat.variable} ${openSans.variable} antialiased`}
     >
-      <meta name="google-site-verification" content="DnCcTmhUvWc7r2JfWjkOSh6tW0XrcsGmAPPBusxbEQ8" />
+      <head>
+        <meta name="google-site-verification" content="DnCcTmhUvWc7r2JfWjkOSh6tW0XrcsGmAPPBusxbEQ8" />
+      </head>
       <body className="font-sans">{children}</body>
     </html>
   );
