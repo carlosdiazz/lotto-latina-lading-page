@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export const SectionHero = () => {
@@ -29,13 +30,16 @@ export const SectionHero = () => {
             Caribe, y también de Estados Unidos.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button
-              size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-            >
-              <Download className="mr-2 h-6 w-6" />
-              Descargar Gratis
-            </Button>
+            <Link href="#descargar">
+              <Button
+                size="lg"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+              >
+                <Download className="mr-2 h-6 w-6" />
+                Descargar Gratis
+              </Button>
+            </Link>
+
             {/**
              * <Button
               variant="outline"

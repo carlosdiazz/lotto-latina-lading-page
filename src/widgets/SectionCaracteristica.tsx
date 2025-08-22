@@ -37,7 +37,7 @@ export const SectionCaracteristica = () => {
   ];
 
   return (
-    <section className="py-32 px-4 relative">
+    <section className="py-10 px-4 relative">
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/5 to-transparent"></div>
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-20">
